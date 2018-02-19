@@ -43,10 +43,31 @@ while (isRunning) {
       }
 
     } else if (calculator_choice == "a"){
-     var selected_choice = prompt ("This calculator only calculates power and square root");
+     var selected_choice = prompt ("0. end the program\n1.To the power\n2.squareRoot");
+ 
+     	if (selected_choice == 0){
+     		alert("program will now end!");
+        isRunning = false;
+     
+     }else if  (selected_choice == 2){
+     	var num1 = prompt("Enter the first number");
+		alert ("The square root is " + Math.sqrt(Number(num1)));
+
+
+    }else if (selected_choice == 1){
+    	var num1 = prompt ("Enter the first number");
+    	alert(" the power is" + Math.pow(number(num1)));
+
+
+    }
+
+
  }
+
+
 }
 
+   
 
 
 
