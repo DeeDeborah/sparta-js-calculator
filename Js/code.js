@@ -56,7 +56,7 @@ while (isRunning) {
 
     }else if (selected_choice == 1){
     	var num1 = prompt ("Enter the first number");
-    	alert(" the power is" + Math.pow(number(num1)));
+    	alert(" the power is" + Math.pow(Number(num1)));
 
 
     }
