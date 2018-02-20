@@ -4,9 +4,7 @@ var calculator_choice;
 var selected_choice;
 var isRunning = true;
 
-
 //calculator selection - Basic //
-
 
 while (isRunning) {
 
@@ -41,29 +39,27 @@ while (isRunning) {
         alert ("The quotiant is " + (Number(num1)/Number(num2)));
 
       }
+      // Advanced calculator
 
     } else if (calculator_choice == "a"){
      var selected_choice = prompt ("0. end the program\n1.To the power\n2.squareRoot");
  
-     	if (selected_choice == 0){
-     		alert("program will now end!");
+      if (selected_choice == 0){
+        alert("program will now end!");
         isRunning = false;
      
      }else if  (selected_choice == 2){
-     	var num1 = prompt("Enter the first number");
-		alert ("The square root is " + Math.sqrt(Number(num1)));
+      var num1 = prompt("Enter the first number");
+    alert ("The square root is " + Math.sqrt(Number(num1)));
 
 
     }else if (selected_choice == 1){
-    	var num1 = prompt ("Enter the first number");
-    	alert(" the power is" + Math.pow(Number(num1)));
-
+      var num1 = prompt ("Enter the first number");
+      alert(" the power is" + Math.pow(Number(num1)));
 
     }
 
-
  }
-
 
 }
 
